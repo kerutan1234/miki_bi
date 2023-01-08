@@ -1,0 +1,72 @@
+.contents1,
+.contents2,
+.contents3,
+.contents4 {
+    width: 25%;
+}
+.contents5,
+.contents6 {
+
+    width: 50%;
+}
+
+.contents7,
+.contents8 {
+
+    width: 100%;
+}
+
+.contents1,
+.contents2,
+.contents3,
+.contents4,
+.contents5,
+.contents6,
+.contents7,
+.contents8 {
+    background: #F0F0F0;
+    margin: 2px 5px 2px;
+    padding: 10px
+}
+
+
+
+body {
+    background-color: #BFC5CA;
+}
+
+.main {
+    display: flex;
+}
+
+.box {
+    box-shadow: 4px 4px;
+}
+
+.pcenter {
+    text-align: center;
+}
+
+.pright {
+    text-align: right;
+}
+
+.margin0 {
+    margin: 0
+}
+
+
+
+
+
+header {
+    background: #7fff7f;
+}
+
+section {
+    margin: 50px
+}
+
+footer {
+    background: #ffbf7f;
+}
