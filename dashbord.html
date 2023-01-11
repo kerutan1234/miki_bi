@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="dashbord.css">
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <title>Document</title>
 </head>
 
@@ -17,9 +19,9 @@
                 <h2 class="margin0">為替レート</h2>
                 <hr>
                 <div>
-                    <p class="pcenter"><span style="font-size:400%;">130.5</span>米ドル</p>
+                    <p class="pcenter"><span id="usRate_txt" style="font-size:400%;">Wait</span> 米ドル</p>
                     <hr>
-                    <p class="pright margin0">2023年01月08日10:00 更新</p>
+                    <p class="pright margin0" id="usRate_update">____年__月__日__:__ 更新</p>
                 </div>
             </div>
             <div class="contents2 box">
@@ -27,9 +29,9 @@
                 <h2 class="margin0">為替レート</h2>
                 <hr>
                 <div>
-                    <p class="pcenter"><span style="font-size:400%;">130.5</span>ユーロドル</p>
+                    <p class="pcenter"><span id="eurRate_txt" style="font-size:400%;">140.00</span> ユーロドル</p>
                     <hr>
-                    <p class="pright margin0">2023年01月08日10:00 更新</p>
+                    <p class="pright margin0" id="eurRate_update">2023年01月10日11:45 更新</p>
                 </div>
             </div>
             <div class="contents3">
@@ -87,20 +89,19 @@
         </div>
     </section>
     <section>
-        <div class="main">
-            <div class="contents8 box">
+        <div class="main" style="width:50%;height:200px">
+            <div class="contents8 box" id="scrollsection">
                 <h2 class="margin0">更新ログ</h2>
                 <hr>
-                <ul>
-                    <li>23/01/06 17:30 アティラ・ファーマ<ATHA> 適時開示・重要契約・決算・その他</li>
-                    <li>23/01/06 17:30 アティラ・ファーマ<ATHA> 適時開示・重要契約・決算・その他</li>
-                    <li>23/01/06 17:30 アティラ・ファーマ<ATHA> 適時開示・重要契約・決算・その他</li>
-                    <li>23/01/06 17:30 アティラ・ファーマ<ATHA> 適時開示・重要契約・決算・その他</li>
-                    <li>23/01/06 17:30 アティラ・ファーマ<ATHA> 適時開示・重要契約・決算・その他</li>
+                <ul id="logs">
                 </ul>
             </div>
         </div>
     </section>
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./dashbord.js"></script>
+
 </body>
 
 </html>
