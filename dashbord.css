@@ -29,6 +29,15 @@
     padding: 10px
 }
 
+.contents1-1{
+    width: 25%;
+}
+.contents1-2{
+    width:75%
+}
+
+
+
 
 
 body {
@@ -54,7 +63,9 @@ body {
 .margin0 {
     margin: 0
 }
-
+.padding0 {
+    padding: 0
+}
 
 
 
@@ -69,4 +80,27 @@ section {
 
 footer {
     background: #ffbf7f;
+}
+
+
+
+.divdebug {
+    border: 2px solid #000000;
+}
+
+.wrapper {
+	position: relative;
+	padding-bottom: 3rem;
+}
+.container {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+}
+.container2 {
+	position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
 }
