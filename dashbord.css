@@ -114,3 +114,7 @@ footer {
     background-color: #3d3d3d;
     color: #ffffff;
 }
+.date{
+    color:#ff0000;
+    font-weight: bold;
+}
